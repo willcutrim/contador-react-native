@@ -15,10 +15,17 @@ export function HomePage(){
         setCount(count + 1);
     }
 
+    function Zerar(){
+        setCount(0);
+    }
+
+
     return (
         
         <Container>
-            <AppBar/>
+            <AppBar
+                zerar={() => Zerar()}
+            />
             <Text
                 title={`contagem ${count}`}
             />
