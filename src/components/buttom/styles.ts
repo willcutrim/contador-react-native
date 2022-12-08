@@ -5,6 +5,8 @@ import { TouchableOpacity } from 'react-native';
 export const Container = styled.View`
     width: 100%;
     align-items: flex-end;
+    padding-right: 10px;
+    padding-bottom: 22px;
 `;
 
 export const Button = styled(TouchableOpacity)`
@@ -17,6 +19,8 @@ export const Button = styled(TouchableOpacity)`
     justify-content: center;
     
     border-radius: 30px;
+
+    
 `;
 
 export const Title = styled.Text`
