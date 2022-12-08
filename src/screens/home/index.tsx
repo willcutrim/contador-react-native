@@ -2,7 +2,7 @@ import { Btn } from '@components/buttom';
 import { Text } from '@components/Text';
 import { useState } from 'react';
 import { Container } from './styles';
-
+import { AppBar } from '@components/appBar';
 
 export function HomePage(){
 
@@ -16,12 +16,14 @@ export function HomePage(){
     }
 
     return (
+        
         <Container>
+            <AppBar/>
             <Text
                 title={`contagem ${count}`}
             />
             <Btn
-            addNumber={() => Count()}
+                addNumber={() => Count()}
                 title='+'
             />
         </Container>
